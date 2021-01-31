@@ -1,0 +1,13 @@
+# install
+
+> bin
+```
+mv redis-server ./bin/redis
+```
+
+> config
+```
+python tools/redis-conf-alter.py  cfg_set conf/redis.conf port 7000
+python tools/redis-conf-alter.py  cfg_set conf/redis.conf bind 0.0.0.0
+```
+
